@@ -211,7 +211,7 @@ h1,h2,ul,li,p{
 }
 .main-description__text{
   position: relative;
-  max-width: 614px;
+  max-width: 565px;
 }
 .btn__main{
   position: absolute;
