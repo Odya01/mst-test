@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Prata';
+  src: url(fonts/Prata-Regular.ttf);
+}
+body{
+  height: 100%;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+h1,h2,ul,li,p{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.container{
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.linkHover::after{
+  content:'';
+  display:block;
+  width:0;
+  height:2px;
+  background: #D5C9BE;
+  transition: width .3s ease;
+}
+.linkHover:focus::after,
+.linkHover:hover::after{
+  width:100%;
+  transition: width .3s ease;
+}
+.linkHover:focus {
+  color: #D5C9BE;
+}
+
+
+
+/* header */
+.header{
+  background-color: #222222;
+  color: white;
+  min-height: 1009px;
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 225px;
+  padding-top: 40px;
+}
+.header__logo{
+  font-family: 'Prata';
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+
+  padding-right: 210px;
+
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header__link{
+  font-family: Arial;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+
+  color: white;
+  text-transform: uppercase;
+}
+.header__item{
+  display: flex;
+  align-items: center;
+}
+.header__link:not(:last-child){
+  margin-right: 29px;
+}
+.header__heading{
+  margin-bottom: 50px;
+
+  font-family: 'Prata';
+  font-size: 70px;
+  font-weight: 400;
+
+  color: white;
+}
+.header__heading-description{
+  margin-bottom: 64px;
+
+  font-family: 'Prata';
+  font-size:  36px;
+  font-weight: 400;
+  padding-left: 7px;
+  border-left: 3px solid #D5C9BE;
+
+  color: white;
+}
+.header__item_right{
+  position: absolute;
+  right: 0;
+  height: 1009px;
+  width: 763px;
+  background-image: url(images/1.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content__item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content__item p{
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: 400;
+
+  color: white;
+  text-align: left;
+}
+.price{
+  font-family: 'Prata';
+  font-size: 40px;
+}
+.svg-dollar{
+  display: block;
+  width: 39px;
+  height: 37px;
+  /* background-image: url(images/money.svg); */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-right: 7px;
+}
+
+.btn{
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+
+  font-family: Arial;
+  font-weight: 700;
+
+
+  text-transform: uppercase;
+  transition: background .3s ease, color .3s ease;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #D5C9BE;
+  color: black;
+}
+.btn__header{
+  font-size: 24px;
+  margin-top: 40px;
+  padding: 25px 70px;
+}
+
+/* main */
+.main{
+  padding-top: 99px;
+  background-color: #282829;
+}
+.main__item{
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+.main-description{
+  display: flex;
+  justify-content: center;
+  min-height: 724px;
+}
+.main__item:not(:last-child){
+  padding-bottom: 40px;
+  border-bottom: 1px solid #55565A;
+}
+.text-svg{
+  display: block;
+  width: 58px;
+  height: 47px;
+  /* background-image: url(images/text-svg.svg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.main__item p{
+  display: block;
+  margin-left: 20px;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+
+  color: white;
+}
+.main-description__text{
+  position: relative;
+  max-width: 614px;
+}
+.btn__main{
+  position: absolute;
+  bottom: 0;
+
+  width: 614px;
+  height: 78px;
+
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.main__img_left{
+  position: absolute;
+  left: 0;
+  width: 600px;
+  min-height: 724px;
+  background-image: url(images/2.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main__img_right{
+  position: absolute;
+  right: 0;
+  width: 600px;
+  min-height: 724px;
+  background-image: url(images/3.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.main__form{
+  padding-top: 100px;
+
+  
+}
+.block-form{
+  background-color: white;
+  border-radius: 10px;
+  padding: 72px 0 72px 134px;
+  
+  
+  background-image: url(images/4.webp);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.form{
+  max-width: 781px;
+  display: flex;
+  flex-direction: column;
+}
+.form__title{
+  font-family: 'Prata';
+  font-size: 54px;
+  font-weight: 400;
+  color: #38535D;
+
+  margin-bottom: 45px;
+}
+#name{
+  margin-bottom: 13px;
+}
+#name, #email{
+  font-size: 22px;
+  padding: 15px 20px;
+  border: 1px solid #38535D;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  font-family: Arial;
+  font-size: 19px;
+  margin: 26px 0;
+}
+#checkbox{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.btn__form{
+  padding: 24px 0;
+  border-radius: 10px;
+  color: white;
+  background-color: #222222;
+  font-size: 20px;
+}
+.btn:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.9;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.footer{
+  padding-top: 100px;
+  background-color: #222222;
+}
+.footer__nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  border-top: 1px solid #D5C9BE;
+  border-bottom: 1px solid #D5C9BE;
+}
+.footer__description{
+  padding: 54px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__block .header__logo{
+  padding: 0;
+}
+.footer__item{
+  display: flex;
+}
+.btn__footer{
+  padding: 20px;
+}
+.footer__social-link a{
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer_bottom{
+  padding-top: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_bottom span{
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer__link{
+  margin-top: 30px;
+
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #D5C9BE;
+}

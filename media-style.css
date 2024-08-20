@@ -1,0 +1,128 @@
+@media (max-width: 1900px){
+  .main__img_left, .main__img_right{
+    display: none;
+  }
+}
+
+@media (max-width: 1561px){
+  .header__item_right{
+    display: none;
+  }
+  .block-form{
+    background-image: none;
+    padding: 60px 50px;
+  }
+  .header__container{
+    justify-content: center;
+  }
+  .header__nav{
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 800px){
+  .header__nav{
+    justify-content: space-around;
+  }
+  .header__logo{
+    padding: 0;
+  }
+  .header{
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+  .main, .main__form, .footer{
+    padding-top: 40px;
+  }
+  .footer__description{
+    padding: 35px 0 20px 0;
+  }
+}
+
+@media (max-width: 680px){
+  .btn__main{
+    width: auto;
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 530px){
+  .footer__description{
+    flex-direction: column-reverse;
+    position: relative;
+    padding: 54px 0 35px 0;
+  }
+  .footer__block:not(:last-child){
+    margin-top: 10px;
+  }
+  .footer__link{
+    position: absolute;
+  }
+  .footer__link_one{
+    bottom: 0;
+    left: 0;
+  }
+  .footer__link_two{
+    bottom: 0;
+  }
+  .footer__link_three{
+    bottom: 0;
+    right: 0;
+  }
+  .header__nav{
+    flex-direction: column;
+  }
+  .header__item{
+    margin-top: 20px;
+  }
+
+  .header__heading{
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .header__heading-description{
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+  .btn__header{
+    font-size: 20px;
+    padding: 18px 70px;
+  }
+  .btn__main{
+    height: 60px;
+    padding: 0 100px;
+  }
+  .form__title{
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .main-description{
+    min-height: 885px;
+  }
+  .btn__form{
+    font-size: 17px;
+    padding: 16px 0;
+  }
+  .content__item p{
+    font-size: 16px;
+  }
+  .price{
+    font-size: 30px;
+  }
+  .block-form{
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 350px){
+.footer__nav{
+  flex-direction: column;
+  align-items: center;
+}
+.header__link:not(:last-child){
+  margin: 0;
+}
+.footer__nav .header__link{
+  margin-bottom: 5px;
+}
+}
