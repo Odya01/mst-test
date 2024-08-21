@@ -2,11 +2,23 @@
   .main__img_left, .main__img_right{
     display: none;
   }
+  .heading{
+    background-image: none;
+  }
 }
 
 @media (max-width: 1561px){
   .header__item_right{
     display: none;
+  }
+  .section__main-description{
+    padding-top: 50px;
+  }
+  .header{
+    padding: 20px 0 10px 0px;
+  }
+  .heading{
+    padding-top: 120px;
   }
   .block-form{
     background-image: none;
@@ -16,22 +28,21 @@
     justify-content: center;
   }
   .header__nav{
-    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (max-width: 800px){
   .header__nav{
     justify-content: space-around;
+    flex-direction: column;
   }
+
   .header__logo{
     padding: 0;
   }
-  .header{
-    min-height: auto;
-    padding-bottom: 40px;
-  }
-  .main, .main__form, .footer{
+  .main__form, .footer{
     padding-top: 40px;
   }
   .footer__description{
@@ -43,6 +54,7 @@
   .btn__main{
     width: auto;
     padding: 0 150px;
+    margin-top: 80px;
   }
 }
 
@@ -97,13 +109,20 @@
     margin-bottom: 25px;
   }
   .main-description{
-    min-height: 885px;
+    min-height: 530px;
   }
   .btn__form{
     font-size: 17px;
     padding: 16px 0;
   }
   .content__item p{
+    font-size: 16px;
+  }
+  .text-svg img, .text-svg{
+    width: 48px;
+    height: 37px;
+  }
+  .main__item p{
     font-size: 16px;
   }
   .price{
@@ -124,5 +143,15 @@
 }
 .footer__nav .header__link{
   margin-bottom: 5px;
+}
+.btn__form{
+  font-size: 14px;
+}
+.checkbox{
+  font-size: 16px;
+}
+#name, #email{
+  padding: 10px 20px;
+  font-size: 17px;
 }
 }
